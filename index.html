@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Player Scorecard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .team-heading {
+            background-color: #e0e0e0;
+            font-weight: bold;
+            text-align: center;
+        }
+        .total-row {
+            font-weight: bold;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Match Scorecard</h1>
+
+    <h2 class="team-heading">Team A Innings</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Batsman</th>
+                <th>How Out</th>
+                <th>Runs</th>
+                <th>Balls</th>
+                <th>4s</th>
+                <th>6s</th>
+                <th>SR</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Player 1</td>
+                <td>c Bowler b Other Bowler</td>
+                <td>50</td>
+                <td>35</td>
+                <td>7</td>
+                <td>2</td>
+                <td>142.86</td>
+            </tr>
+            <tr>
+                <td>Player 2</td>
+                <td>not out</td>
+                <td>30</td>
+                <td>25</td>
+                <td>3</td>
+                <td>1</td>
+                <td>120.00</td>
+            </tr>
+            <!-- Add more batsmen rows as needed -->
+        </tbody>
+        <tfoot>
+            <tr class="total-row">
+                <td colspan="2">Extras</td>
+                <td>10 (w 5, nb 3, b 2)</td>
+                <td colspan="4"></td>
+            </tr>
+            <tr class="total-row">
+                <td colspan="2">Total</td>
+                <td>90/1</td>
+                <td colspan="4"></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2 class="team-heading">Team B Innings (Bowling)</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Bowler</th>
+                <th>Overs</th>
+                <th>Maidens</th>
+                <th>Runs</th>
+                <th>Wickets</th>
+                <th>Economy</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Bowler A</td>
+                <td>4</td>
+                <td>0</td>
+                <td>25</td>
+                <td>1</td>
+                <td>6.25</td>
+            </tr>
+            <tr>
+                <td>Bowler B</td>
+                <td>3</td>
+                <td>0</td>
+                <td>20</td>
+                <td>0</td>
+                <td>6.67</td>
+            </tr>
+            <!-- Add more bowlers rows as needed -->
+        </tbody>
+    </table>
+
+    <!-- You can add similar tables for Team B's batting and Team A's bowling -->
+
+</body>
+</html>
